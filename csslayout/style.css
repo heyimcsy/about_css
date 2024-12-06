@@ -12,15 +12,24 @@ ul {
 
   /* flex-direction: row; */
   /* row , row-reverse , column, column-reverse */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   /* wrap , nowrap, wrap-reverse */
   /* flex-direction과 flex-wrap 을 한번에 지정하는 속성
   flex-flow: row-reverse wrap; */
 
   border: 5px solid red;
 
-  justify-content: space-around;
+  justify-content: center;
   /* flex start 앞에서부터 일열로 붙여서 진행 flex-end 뒤에서 부터 붙이기
     center 가운데 정렬 space-around 모든 요소가 양쪽으로 동일한 간격으로 나누어 진다(1요소11요소11요소1).space-between양 끝 여백
     없고 간격 동일; space-evenly container모든 사이사이에 동일한 간격으로 나눈다(1요소1요소1요소1) */
+
+  /* align-items: center; */
+  /* stretch 기본 특성 flex-start flex-end center */
+  /* align-content flex-wrap의 값이 wrap으로 지정되어 있고, 아이템 배치위해 필요한 공간보다 플렉스 컨테이너가 더 클 때  */
+  align-content: space-evenly;
 }
+
+/* li:nth-child(3) {
+  align-self: flex-start;
+} */
