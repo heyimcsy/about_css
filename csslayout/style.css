@@ -34,24 +34,34 @@ ul {
 flex 는 flex-grow ,flex-shrink, flex-basis 위 세가지 속성을 정의할 수 있는 단축 속성이다.  */
   /* flex: 0 0 200px; */
 }
-
+/* order: 정수값으로 세부 조정을 할 수 있다. */
 li {
   background-color: beige;
 }
 li:nth-child(2n) {
   background-color: coral;
 }
-
+li:nth-child(1) {
+  order: 5;
+}
 li:nth-child(2) {
-  flex-basis: 100px;
-  flex: 0 0 200px;
+  order: 3;
+  /* flex-basis: 100px;
+  flex: 0 0 200px; */
   /* flex-grow: 1; */
   /* 여유공간이 있을 때 0보다 클 때부터 영향력을 가진다 */
   /* flex-shrink: 2; */
   /* 줄어드는 상황에서 1보다 클 때부터 영향력을 가진다 */
 }
 li:nth-child(3) {
+  order: 4;
   /* align-self: flex-start; */
   /* flex-grow: 2; */
   /* flex-shrink: 3; */
+}
+li:nth-child(4) {
+  order: 2;
+}
+li:nth-child(5) {
+  order: 1;
 }
