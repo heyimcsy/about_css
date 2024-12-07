@@ -24,9 +24,12 @@ li {
   height: 500px;
   /* grid-template-columns: 100px 1fr 2fr; */
   /* 열크기와 열 갯수 지정 fr -> 사용할 수 있는 공간에서 비율로 나누겠따 */
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 200px 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  /* 1번쨰 인자에 auto-fill auto-fit,아니면 적용할 갯수 */
+  /* 100px 1fr auto 다 사용가능 */
+  grid-template-rows: repeat(3, 100px);
+  /* grid-template-rows: 200px 1fr 1fr; */
 
-  gap: 20px 10px;
+  gap: 10px;
   /* gap grid-gap */
 }
