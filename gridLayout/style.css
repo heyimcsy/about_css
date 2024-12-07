@@ -18,3 +18,15 @@ li {
   border: 5px solid tomato;
   border-radius: 8px;
 }
+
+.container {
+  display: grid;
+  height: 500px;
+  /* grid-template-columns: 100px 1fr 2fr; */
+  /* 열크기와 열 갯수 지정 fr -> 사용할 수 있는 공간에서 비율로 나누겠따 */
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 200px 1fr 1fr;
+
+  gap: 20px 10px;
+  /* gap grid-gap */
+}
